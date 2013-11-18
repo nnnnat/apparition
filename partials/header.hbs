@@ -1,0 +1,5 @@
+{{! The big featured header on the homepage, with the site logo and description }}
+<header>
+	{{#if @blog.logo}}<a id="blog-logo" class="logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="Blog Logo" /></a>{{/if}}
+	<p>{{@blog.description}}</p>
+</header>

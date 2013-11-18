@@ -1,31 +1,22 @@
 {{!< default}}
 
-{{! The comment above "< default" means - insert everything in this file into
-    the {body} of the default.hbs template, which contains our header/footer. }}
+{{! Everything inside the #post tags pulls data from the post }}
+{{#post}}
+<div id="bk" class="back">{{#if @blog.logo}}<a id="blog-logo" class="logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="Blog Logo" />{{/if}}<span id="mc">home</span></a></div>
+<div class="post-wrap">
+    {{! Everything below outputs content of the the post which has been published }}
+	<article class="{{post_class}}">
+    	<h1 class="post-title">{{{title}}}</h1>
 
-    {{post_class}}
+    	<time datetime="{{date format="YYYY-MM-DD"}}">{{date format='DD MMM YYYY'}}</time>
 
-        {{! Each post has the blog logo at the top, with a link back to the home page }}
-                {{#if @blog.logo}}
-                    <img src="{{@blog.logo}}" alt="Blog Logo" />
-                {{else}}
-                    {{@blog.title}}
-                {{/if}}
+    	{{content}}
 
-        {{! Everything inside the #post tags pulls data from the post }}
-        {{#post}}
+    	<h4>{{#if tags}}<b>Tags:</b> {{tags separator=" | "}}{{/if}}</h4>
 
-        {{! Everything below outputs content of the the post which has been published }}
-        <time datetime="{{date format="YYYY-MM-DD"}}">{{date format='DD MMM YYYY'}} {{#if tags}}on {{tags separator=" | "}}{{/if}}
+    </article>
+</div>
 
-        {{{title}}}
+{{> post-header}}
 
-            {{content}}
-
-            {{#if author}}
-                <h4>{{author.name}}</h4>
-                <p>{{author.bio}}</p>
-            {{/if}}
-
-
-        {{/post}}
+{{/post}}

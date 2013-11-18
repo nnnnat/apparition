@@ -1,0 +1,14 @@
+{{! The big featured header on the homepage, with the site logo and description }}
+<header>
+	{{#if author}}
+        <img src="{{author.image}}" alt="{{author.name}}">
+        <div class="head-wrap">
+            <h3>{{author.name}}</h3>
+            <p>{{author.bio}}</p>
+            <div class="links">
+                <a href="mailto:{{author.email}}">Contact</a>
+                <a href="http://{{author.website}}">Website</a>
+            </div>
+        </div>
+    {{/if}}
+</header>

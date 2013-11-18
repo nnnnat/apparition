@@ -1,0 +1,8 @@
+/* line 1, ../sass/animations.scss */
+a {
+  -webkit-transition: color, background-color 0.5s ease;
+  -moz-transition: color, background-color 0.5s ease;
+  -ms-transition: color, background-color 0.5s ease;
+  -o-transition: color, background-color 0.5s ease;
+  transition: color, background-color 0.5s ease;
+}

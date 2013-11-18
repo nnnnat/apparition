@@ -1,0 +1,51 @@
+.home-template, .archive-template{
+	header{
+		border-bottom: 1px solid $grey; 
+		margin: 0 auto;
+		padding: 0 0 2em;
+		width: 100%;
+		@include clearfix;
+		@media screen and (min-width: $tbp){
+			margin: 0 auto 2em;
+			padding: 2em;
+		}
+		@media screen and (min-width: $dbp){
+				border-bottom: none;
+				padding: 0 2em 0 0;
+				float: left;
+				width: 30%;
+		}
+		img{
+			display: block;
+			float: none; 
+			height: auto;
+			margin: 0;
+			width: 100%;
+			@media screen and (min-width: $tbp){
+				float: left; 
+				width: 4.125em;
+			}
+			@media screen and (min-width: $dbp){
+				margin: 0 0 1.5em;
+				width: 100%;
+			}
+		}
+		p{
+			padding: 2em 0 0;
+			width: 100%;	
+			@media screen and (min-width: $tbp){
+				clear: none;
+				float: left;
+				margin: 0.2em 2em 0;
+				max-width: 30em;
+				padding: 0;
+				width: 60%;
+			}
+			@media screen and (min-width: $dbp){
+				float: none;
+				margin: 0;
+				width: 100%;
+			}
+		}
+	}
+}

@@ -1,0 +1,49 @@
+.post-template{
+	.wrapper{
+		header{
+			border-top: 1px solid $grey; 
+			margin: 0 auto;
+			padding: 2em 0 0;
+			width: 100%;
+			@include clearfix;
+			@media screen and (min-width: $tbp){
+				margin: 0 auto 2em;
+				padding: 2em;
+			}
+			@media screen and (min-width: $dbp){
+					border-top: none;
+					float: left;
+					padding: 0 2em 0 0;
+					width: 30%;
+			}
+			img{
+				display: block;
+				margin: 0 0 1.5em;
+				height: auto;
+				width: 100%;
+				@media screen and (min-width: $tbp){
+					float: left;
+					width: 14em;
+				}
+				@media screen and (min-width: $dbp){
+					width: 100%;
+				}
+			}
+			.head-wrap{
+				display: block;
+				margin: 0;
+				height: auto;
+				width: 100%;
+				@media screen and (min-width: $tbp){
+					float: right;
+					width: 60%;
+				}
+				@media screen and (min-width: $dbp){
+					float: none;
+					width: 100%;
+				}
+			}
+			
+		}
+	}
+}
