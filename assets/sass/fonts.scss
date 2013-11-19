@@ -3,47 +3,47 @@ html{
 }
 
 h1{
-	font-family: 'Gentium Basic', serif;
+	font-family: 'PT Sans', sans-serif;
 	font-size: 2em;
 	font-weight: 700;
 }
 h2{
 	float: none;
-	font-family: 'Gentium Basic', serif;
+	font-family: 'PT Sans', sans-serif;
 	font-size: 1.4em;
 	font-weight: 700;
 	line-height: 1.8em;
 	padding: 0 0.5em;
 }
 h3{
-	font-family: 'Gentium Basic', serif;
+	font-family: 'PT Sans', sans-serif;
 	font-size: 1em;
-	font-style: italic;
 	font-weight: 700;
 	line-height: 1.3em;
 	padding: 0 0.5em;
 }
 h4{
-	font-family: 'Gentium Basic', serif;
+	font-family: 'PT Sans', sans-serif;
 	font-size: 0.8em;
 	font-weight: 700;
+	letter-spacing: 0.05em;
 	line-height: 2em;
 	padding: 0 0.5em;
 }
 h5{
-	font-family: 'Gentium Basic', serif;
+	font-family: 'PT Sans', sans-serif;
 	font-size: 0.8em;
 	font-weight: 500;
 	padding: 0 0.5em;
 }
 h6{
-	font-family: 'Gentium Basic', serif;
+	font-family: 'PT Sans', sans-serif;
 	font-size: 0.6em;
 	font-weight: 500;
 	padding: 0 0.5em;
 }
 blockquote{
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'PT Sans', sans-serif;
 	font-size: 1.3em;
 	font-weight: 700;
 	line-height: 1em;
@@ -55,6 +55,7 @@ blockquote{
 time{
 	clear:both;
 	float: left;
+	font-family: 'PT Sans', sans-serif;
 	font-weight: 500;	
 	margin: 0.5em 0 0;
 	letter-spacing: 0.04em;
@@ -66,7 +67,7 @@ time{
 }
 p{
 	clear: both;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'PT Sans', sans-serif;
 	font-size: 0.8em;
 	font-weight: 400;
 	letter-spacing: 0.04em;
@@ -80,7 +81,7 @@ p{
 ul,ol{
 	padding: 0.5em 0.5em 0.5em $pL;
 	li{
-		font-family: 'Open Sans', sans-serif;
+		font-family: 'PT Sans', sans-serif;
 		font-size: 0.8em;
 		font-weight: 400;
 		letter-spacing: 0.04em;
@@ -95,9 +96,21 @@ a{
 	}
 }
 
+.read_more{
+	float: right;
+	margin: 0;
+	padding: 0 0 2em 0;
+	span{
+		font-size: 1.4em;
+		line-height: 2em;
+		vertical-align: middle;
+		text-align: left;
+	}
+}
+
 .post-title{
 	float: left;
-	font-family: 'Gentium Basic', serif;
+	font-family: 'PT Sans', sans-serif;
 	font-size: 2em;
 	font-weight: 700;
 	line-height: 1em;
@@ -116,16 +129,20 @@ a{
 }
 
 header{
+	p{
+		font-size: 0.7em;
+	}
 	.links{
 		a{
 			background-color: $red;
 			box-shadow: 0 0 0.2em $grey;
 			-webkit-box-shadow: 0 0 0.2em $grey;
-			color: $black;
+			color: $white;
 			display: block;
+			font-family: 'PT Sans', sans-serif;
 			font-size: 0.8em;
 			float: left;
-			letter-spacing: 0.05em;
+			letter-spacing: 0.08em;
 			margin: 0.5em 0;
 			padding: 1em;
 			text-align: center;
@@ -140,7 +157,7 @@ header{
 }
 
 footer{
-	font-family: 'Gentium Basic', serif;
+	font-family: 'PT Sans', sans-serif;
 	font-size: 0.8em;
 	font-weight: 400;
 	letter-spacing: 0.03em;

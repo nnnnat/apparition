@@ -46,13 +46,14 @@ body{
 					margin: 0 2em; 
 					padding: 2em 0 0;
 					&:first-of-type{
-						padding: 0 0 2em;
+						padding: 0;
 					}
 				}
 			}
 		}
 		.pagination{
 		clear: both;
+		font-family: 'PT Sans', sans-serif;
 		height: inherit;
 		padding: 4em 0 0;
 		text-align: center;
