@@ -1,3 +1,6 @@
+//borders
+$bw: 1px solid;
+
 //colors
 $black: #222222;
 $grey: #cecece;
@@ -6,5 +9,11 @@ $red: #EF4723;
 
 //sizes
 $pL: 2.5em;
-$tbp: 37.5em;
+$hsz: 14em;
+$psz: 42em;
+$tbp: 25em;
 $dbp: 60em;
+$cbp: 81.25em;
+
+//tranistions
+$hbtn: 0.5s cubic-bezier(1,-0.02,.83,1.02)

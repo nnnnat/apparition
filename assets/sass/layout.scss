@@ -1,11 +1,4 @@
-*{
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	-ms-box-sizing: border-box;
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
-}
+*, *:before, *:after {-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; margin: 0; padding: 0;}
 
 body{
 	background-color: $white;
@@ -18,22 +11,23 @@ body{
 	}
 	.wrapper{
 		margin: 0 auto;
-		max-width: 63.7em;
-		padding: 5%;
+		max-width: $dbp;
+		padding: 6.25em 2em 2em;
 		width:100%;
 		@include clearfix;
 		.post-wrap{
 			padding: 0;
 			width: 100%;
 			@media screen and (min-width: $dbp){
-				border-left: 1px solid $grey;
+				border-left: $bw $grey;
 				float: left;
-				width: 70%;
+				padding: 0 0 0 2em;
+				width: $psz;
 			}
 			article{
-				border-bottom:1px solid $grey;
+				border-bottom:$bw $grey;
 				margin: 0; 
-				padding: 2em 0;
+				padding: 2em 0 0;
 				width: 98%;
 				@media screen and (min-width: $tbp){
 					padding: 2em;
@@ -43,7 +37,6 @@ body{
 					border: none;
 				}
 				@media screen and (min-width: $dbp){
-					margin: 0 2em; 
 					padding: 2em 0 0;
 					&:first-of-type{
 						padding: 0;

@@ -1,9 +1,11 @@
 /*
 Syntax error: Undefined variable: "$white".
-        on line 11 of /Users/nattkua/Clients/metes_and_bounds/ghost/content/themes/apparition/assets/sass/layout.scss
+        on line 4 of /Users/nattkua/Clients/metes_and_bounds/ghost/content/themes/apparition/assets/sass/layout.scss
+
+1: /Users/nattkua/Clients/metes_and_bounds/ghost/content/themes/apparition/assets/sass/layout.scss
 
 Backtrace:
-/Users/nattkua/Clients/metes_and_bounds/ghost/content/themes/apparition/assets/sass/layout.scss:11
+/Users/nattkua/Clients/metes_and_bounds/ghost/content/themes/apparition/assets/sass/layout.scss:4
 /Library/Ruby/Gems/2.0.0/gems/sass-3.2.12/lib/sass/script/variable.rb:49:in `_perform'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.2.12/lib/sass/script/node.rb:40:in `perform'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:298:in `visit_prop'
@@ -74,4 +76,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined variable: \"$white\".\A         on line 11 of /Users/nattkua/Clients/metes_and_bounds/ghost/content/themes/apparition/assets/sass/layout.scss"; }
+  content: "Syntax error: Undefined variable: \"$white\".\A         on line 4 of /Users/nattkua/Clients/metes_and_bounds/ghost/content/themes/apparition/assets/sass/layout.scss\A \A 1: /Users/nattkua/Clients/metes_and_bounds/ghost/content/themes/apparition/assets/sass/layout.scss"; }
