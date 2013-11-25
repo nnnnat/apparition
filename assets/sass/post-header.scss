@@ -21,7 +21,7 @@
 				margin: 0 0 1.5em;
 				height: auto;
 				width: 100%;
-				@media screen and (min-width: $tbp){
+				@media screen and (min-width: 37.5em){
 					float: left;
 					width: 14em;
 				}
@@ -34,7 +34,7 @@
 				margin: 0;
 				height: auto;
 				width: 100%;
-				@media screen and (min-width: $tbp){
+				@media screen and (min-width: 37.5em){
 					float: right;
 					width: 60%;
 				}

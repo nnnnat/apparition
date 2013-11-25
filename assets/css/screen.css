@@ -567,7 +567,7 @@ body .wrapper .pagination a:hover {
   height: auto;
   width: 100%;
 }
-@media screen and (min-width: 25em) {
+@media screen and (min-width: 37.5em) {
   /* line 19, ../sass/post-header.scss */
   .post-template .wrapper header img {
     float: left;
@@ -587,7 +587,7 @@ body .wrapper .pagination a:hover {
   height: auto;
   width: 100%;
 }
-@media screen and (min-width: 25em) {
+@media screen and (min-width: 37.5em) {
   /* line 32, ../sass/post-header.scss */
   .post-template .wrapper header .head-wrap {
     float: right;
